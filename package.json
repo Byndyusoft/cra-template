@@ -1,6 +1,7 @@
 {
   "name": "@byndyusoft/cra-template",
   "version": "0.1.0",
+  "main": "template.json",
   "keywords": [
     "byndyusoft",
     "react",

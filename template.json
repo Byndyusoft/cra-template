@@ -8,6 +8,7 @@
       "test:watch": "react-scripts test --env=jest-environment-jsdom-sixteen"
     },
     "dependencies": {
+      "@elastic/apm-rum": "^5.6.1",
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",

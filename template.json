@@ -1,6 +1,8 @@
 {
   "package": {
     "scripts": {
+      "prettier:check": "prettier --check 'src/**/*.{js, ts, tsx, css}'",
+      "prettier:write": "prettier --write 'src/**/*.{js, ts, tsx, css}'",
       "test": "react-scripts test --env=jest-environment-jsdom-sixteen --watchAll=false",
       "test:coverage": "react-scripts test --env=jest-environment-jsdom-sixteen --coverage --watchAll=false",
       "test:watch": "react-scripts test --env=jest-environment-jsdom-sixteen"

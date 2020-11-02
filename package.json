@@ -10,6 +10,9 @@
     "typescript"
   ],
   "description": "The base template for Create React App.",
+  "scripts": {
+    "prettify": "prettier --write 'template/**/*.{js, ts, tsx, css, html}'"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/byndyusoft/cra-template.git"
@@ -27,5 +30,13 @@
   ],
   "devDependencies": {
     "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js, ts, tsx, css, html}": ["npm run prettify"]
   }
 }

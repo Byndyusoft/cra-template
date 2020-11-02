@@ -31,6 +31,14 @@
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.{js, ts, tsx, css}": ["npm run prettier:write"]
     }
   }
 }

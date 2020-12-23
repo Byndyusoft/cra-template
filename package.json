@@ -1,6 +1,6 @@
 {
   "name": "@byndyusoft/cra-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "template.json",
   "keywords": [
     "byndyusoft",
@@ -37,6 +37,8 @@
     }
   },
   "lint-staged": {
-    "*.{js, ts, tsx, css, html}": ["npm run prettify"]
+    "*.{js, ts, tsx, css, html}": [
+      "npm run prettify"
+    ]
   }
 }

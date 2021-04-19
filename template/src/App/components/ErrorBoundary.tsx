@@ -3,7 +3,11 @@ import { apm } from '@elastic/apm-rum';
 import { ErrorBoundary as ReactErrorBoundary } from 'react-error-boundary';
 import ErrorFallback from './ErrorFallback';
 
-const FallbackComponent: FC<any> = ({ error }) => {
+interface IFallbackComponentProps {
+    error: Error;
+}
+
+const FallbackComponent = ({ error }: IFallbackComponentProps): JSX.Element => {
     useEffect(() => {
         apm.captureError(error);
     }, [error]);
@@ -11,8 +15,8 @@ const FallbackComponent: FC<any> = ({ error }) => {
     return <ErrorFallback />;
 };
 
-const ErrorBoundary: FC = ({ children }) => {
-    return <ReactErrorBoundary FallbackComponent={FallbackComponent}>{children}</ReactErrorBoundary>;
-};
+const ErrorBoundary: FC = ({ children }): JSX.Element => (
+    <ReactErrorBoundary FallbackComponent={FallbackComponent}>{children}</ReactErrorBoundary>
+);
 
 export default ErrorBoundary;

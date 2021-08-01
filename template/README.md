@@ -9,6 +9,12 @@ Make sure you have installed all the following prerequisites on your development
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org) (version 14 LTS or higher)
 
+## Live environments
+
+- [Testing](https://testing.env)
+- [Stage](https://stage.env)
+- [Production](https://production.env)
+
 ## Maintainers
 
 - [Name Surname](mailto:surname@email.com)

@@ -18,9 +18,17 @@ Make sure you have installed all the following prerequisites on your development
 ## Running tests
 
 
+## Branches
+
+- [master] - Default git branch. Do not use it.
+- [develop] - Default development branch.
+- [release] - Release branch. Each release has its own tag.
+
+All development branches must begin with the `feature/` prefix.
+
 ## Features
 
-1. [Feature Name](path/to/feature/folder) - feature description
+1. [Feature Name](path/to/feature/folder) - Feature description.
 
 
 ## Maintainers

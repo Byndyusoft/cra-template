@@ -15,6 +15,14 @@ Make sure you have installed all the following prerequisites on your development
 - [Stage](https://stage.env)
 - [Production](https://production.env)
 
+## Running tests
+
+
+## Features
+
+1. [Feature Name](path/to/feature/folder) - feature description
+
+
 ## Maintainers
 
 - [Name Surname](mailto:surname@email.com)

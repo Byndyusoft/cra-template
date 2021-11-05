@@ -53,9 +53,13 @@ The build is in the `build` folder and ready to be deployed, it is minified and 
 
 ## Configuration
 
-- `.env.production` -
-- `.env.development` -
-- `.env.test` -
+The application loads the configuration from following files:
+
+- `.env.production` - for production build
+- `.env.development` - for locally development
+- `.env.test` - for running tests
+
+See the section about [advanced configuration](https://create-react-app.dev/docs/advanced-configuration) for more information.
 
 ## Testing
 

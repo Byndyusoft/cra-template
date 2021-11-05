@@ -109,9 +109,13 @@ The scripts checking uses the [@byndyusoft/stylelint-config](https://www.npmjs.c
 
 ## Code formatting
 
+To check the code for formatting issues, use the following command:
+
 ```
 npm run prettier:check
 ```
+
+To fix code formatting issues, use the following command:
 
 ```
 npm run prettier:write

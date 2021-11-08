@@ -131,7 +131,7 @@ npm run prettier:write
 
 ## Branches
 
-- `master` - Default git branch. Do not use it.
+- `master` - Default git branch.
 - `develop` - Default development branch.
 - `release` - Release branch. Each release has its own tag.
 

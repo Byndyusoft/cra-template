@@ -40,6 +40,8 @@ npm start
 The app will be started at [http://localhost:3000](http://localhost:3000) in the development mode.
 The page will reload after any edits.
 
+The development mode uses a proxy for the API requests, which you can configure in the `setupProxy.js` file.
+
 ## Production
 
 To get the production build, use the following command:

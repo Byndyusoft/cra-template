@@ -1,46 +1,147 @@
-# Getting Started with Create React App
+# Application name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Application description
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Make sure you have installed all the following prerequisites on your development machine:
 
-### `npm start`
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org) (version 14 LTS or higher)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live environments
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Testing](https://testing.env)
+- [Stage](https://stage.env)
+- [Production](https://production.env)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
+1. [Feature Name](path/to/feature/folder) - Feature description.
+
+## Dependencies
+
+After cloning the repository in the project folder, run the following command:
+
+```
+npm install
+```
+
+It installs the all application dependencies.
+
+## Development
+
+To run the application locally, use the following command:
+
+```
+npm start
+```
+
+The app will be started at [http://localhost:3000](http://localhost:3000) in the development mode.
+The page will reload after any edits.
+
+The development mode uses a proxy for the API requests, which you can configure in the `setupProxy.js` file.
+
+## Production
+
+To get the production build, use the following command:
+
+```
+npm run build
+```
+
+It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is in the `build` folder and ready to be deployed, it is minified and the filenames include the hashes.
+
+## Configuration
+
+The application loads the configuration from following files:
+
+- `.env.production` - for production build
+- `.env.development` - for locally development
+- `.env.test` - for running tests
+
+See the section about [advanced configuration](https://create-react-app.dev/docs/advanced-configuration) for more information.
+
+## Testing
+
+Tests can be run using the following command:
+
+```
+npm test
+```
+
+To run the tests in the interactive watch mode, use the following command:
+
+```
+npm run test:watch
+```
+
+To collect test coverage information, use the following command:
+
+```
+npm run test:coverage
+```
+
+The test coverage report is in the `coverage` folder.
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Code quality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the code quality checking use the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm run lint
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It runs styles and scripts checking.
 
-### `npm run eject`
+To run the scripts checking separately use the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm run lint:scripts
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The scripts checking uses the [@byndyusoft/eslint-config](https://www.npmjs.com/package/@byndyusoft/eslint-config) configuration.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the styles checking separately use the following command:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm run lint:styles
+```
 
-## Learn More
+The scripts checking uses the [@byndyusoft/stylelint-config](https://www.npmjs.com/package/@byndyusoft/stylelint-config) configuration.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Code formatting
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To check the code for formatting issues, use the following command:
+
+```
+npm run prettier:check
+```
+
+To fix code formatting issues, use the following command:
+
+```
+npm run prettier:write
+```
+
+## Other available scripts
+
+> List of available scripts with descriptions
+
+## Branches
+
+- `master` - Default git branch.
+- `develop` - Default development branch.
+- `release` - Release branch. Each release has its own tag.
+
+All development branches must begin with the `feature/` prefix.
+
+## Maintainers
+
+- [Name Surname](mailto:surname@email.com)
+
+---
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [@byndyusoft/cra-template](https://www.npmjs.com/package/@byndyusoft/cra-template).

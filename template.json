@@ -5,7 +5,7 @@
       "prettier:check": "prettier --check 'src/**/*.{js, ts, tsx, css}'",
       "prettier:write": "prettier --write 'src/**/*.{js, ts, tsx, css}'",
       "test": "react-scripts test --env=jest-environment-jsdom-sixteen --watchAll=false",
-      "test:coverage": "react-scripts test --env=jest-environment-jsdom-sixteen --coverage --watchAll=false",
+      "test:coverage": "react-scripts test --env=jest-environment-jsdom-sixteen --coverage --watchAll=false --testResultsProcessor=jest-sonar-reporter",
       "test:watch": "react-scripts test --env=jest-environment-jsdom-sixteen"
     },
     "dependencies": {
@@ -34,8 +34,10 @@
       "http-proxy-middleware": "^1.0.6",
       "husky": "^6.0.0",
       "jest-environment-jsdom-sixteen": "^1.0.3",
+      "jest-sonar-reporter": "2.0.0",
       "lint-staged": "^10.5.1",
-      "prettier": "^2.1.2"
+      "prettier": "^2.1.2",
+      "sonarqube-scanner": "2.8.1"
     },
     "eslintConfig": {
       "extends": [
@@ -55,6 +57,11 @@
     },
     "lint-staged": {
       "*.{js, ts, tsx, css}": ["npm run prettier:write"]
+    },
+    "jestSonar": {
+      "reportPath": "./coverage",
+      "reportFile": "test-report.xml",
+      "indent": 4
     }
   }
 }

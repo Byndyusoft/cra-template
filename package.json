@@ -11,8 +11,7 @@
   ],
   "description": "The base template for Create React App.",
   "scripts": {
-    "prettify": "prettier --write 'template/**/*.{js, ts, tsx, css, html}'",
-    "test:coverage": "react-scripts test --env=jest-environment-jsdom-sixteen --coverage --watchAll=false --testResultsProcessor=jest-sonar-reporter"
+    "prettify": "prettier --write 'template/**/*.{js, ts, tsx, css, html}'"
   },
   "repository": {
     "type": "git",
@@ -30,9 +29,7 @@
     "template.json"
   ],
   "devDependencies": {
-    "prettier": "^2.1.2",
-    "sonarqube-scanner": "2.8.1",
-    "jest-sonar-reporter": "2.0.0"
+    "prettier": "^2.1.2"
   },
   "husky": {
     "hooks": {
@@ -43,10 +40,5 @@
     "*.{js, ts, tsx, css, html}": [
       "npm run prettify"
     ]
-  },
-  "jestSonar": {
-    "reportPath": "./coverage",
-    "reportFile": "test-report.xml",
-    "indent": 4
   }
 }

@@ -1,0 +1,13 @@
+---
+to: src/hooks/<%= name %>/<%= name %>.tsx
+---
+import React, { useState } from 'react';
+import { I<%= h.capitalize(name) %>Payload } from './<%= name %>.types';
+
+const <%= name %> = () : I<%= h.capitalize(name) %>Payload => {
+    const [value, setValue] = useState<number>(0);
+
+    return { value }
+};
+
+export default <%= name %>;

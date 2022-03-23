@@ -1,0 +1,47 @@
+---
+to: <%= destination %>/contexts/<%= name%>/<%= name %>.tsx
+---
+import React, { FC, createContext, useContext, useState } from 'react';
+
+
+export interface I<%= name %>Context {
+    counter: number;
+    onIncrement: () => void;
+    onDecrement: () => void;
+}
+
+export const <%= name %>Context = createContext<I<%= name %>Context>({} as I<%= name %>Context);
+
+export function use<%= name %>Context(): I<%= name %>Context {
+    const context = useContext(<%= name %>Context);
+
+    if (context === undefined) {
+        throw new Error('use<%= name %>Context must be used within the <%= name %>Provider');
+    }
+
+    return context;
+}
+
+export const <%= name %>Provider: FC = ({ children }) => {
+    const [counter, setCounter] = useState(0);
+
+    const onIncrementHandler = () => {
+        setCounter(prev => prev + 1);
+    };
+
+    const onDecrementHandler = () => {
+        setCounter(prev => prev -1)
+    }
+
+    return (
+        <<%= name %>Context.Provider
+            value={{
+                counter,
+                onIncrement: onIncrementHandler,
+                onDecrement: onDecrementHandler
+            }}
+        >
+            {children}
+        </<%= name %>Context.Provider>
+    );
+};

@@ -4,16 +4,16 @@
 
 ## Usage
 
-To use this template, add `--template @byndyusoft` when creating a new app.
+To use this template, add `--template @byndyusoft/cra-template` when creating a new app.
 
 For example:
 
 ```sh
-npx create-react-app my-app --template @byndyusoft
+npx create-react-app my-app --template @byndyusoft/cra-template
 
 # or
 
-yarn create react-app my-app --template @byndyusoft
+yarn create react-app my-app --template @byndyusoft/cra-template
 ```
 
 ## Maintainers

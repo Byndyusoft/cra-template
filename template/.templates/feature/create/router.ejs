@@ -1,0 +1,19 @@
+---
+to: "<%= hasRouter ? `src/${name}/components/${name}Routes/${name}Routes.tsx` : null %>"
+---
+
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import <%= name %> from '../<%= name %>'
+
+const <%= name %>Routes = () => {
+    return (
+        <Switch>
+            <Route>
+                <<%= name %> />
+            </Route>
+        </Switch>
+    );
+};
+
+export default <%= name %>;

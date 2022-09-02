@@ -1,0 +1,17 @@
+---
+to: "<%= hasTests ? `src/hooks/${name}/${name}.tests.tsx` : null %>"
+---
+import { renderHook, act } from '@testing-library/react-hooks'
+import <%= name %> from './<%= name %>';
+
+describe('hooks/<%= name %>', () => {
+    test('should increment counter', () => {
+        const { result } = renderHook(() => <%= name %>())
+      
+        act(() => {
+          result.current.increment()
+        })
+      
+        expect(result.current.value).toBe(1)
+      })
+});

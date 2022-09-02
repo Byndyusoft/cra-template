@@ -51,6 +51,19 @@
         "project": "tsconfig.json"
       }
     },
+    "jest": {
+      "collectCoverageFrom": [
+        "./src/**/**.*",
+        "!**/__handlers__/**",
+        "!**/__fixtures__/**",
+        "!**/__stories__/**",
+        "!**/*.{stories,story}.{tsx, jsx}",
+        "!./src/*.*",
+        "!**/index.{ts, tsx, js, jsx}",
+        "!**/assets/**",
+        "!**/*Routes.tsx"
+      ]
+    },
     "husky": {
       "hooks": {
         "pre-commit": "lint-staged"

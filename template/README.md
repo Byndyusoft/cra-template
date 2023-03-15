@@ -139,6 +139,11 @@ npm run prettier:write
 
 All development branches must begin with the `feature/` prefix.
 
+## Requirements
+
+- Screen resolution - Common desktop resolution
+- Supported browsers - Documented with browserslist
+
 ## Maintainers
 
 - [Name Surname](mailto:surname@email.com)
